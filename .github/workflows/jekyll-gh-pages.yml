@@ -53,3 +53,5 @@ jobs:
   # Adding a theme 
   gem "minima" 
   $ bundle
+  
+  theme: minima
