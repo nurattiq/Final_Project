@@ -55,3 +55,18 @@ jobs:
   $ bundle
   
   theme: minima
+  
+  # Configuring my theme 
+  
+  ---
+# new `_layouts/default.html` for backwards-compatibility when multiple
+# layouts have been customized.
+
+layout: base
+---
+
+{{ content }}
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
