@@ -74,3 +74,6 @@ layout: base
   author:
   name: Nur Attiq
   email: "nurattiq@gmail.com"
+  
+  social_links:
+    - { platform: linkedin,  user_url: "https://www.linkedin.com/in/nurattiq/ }
