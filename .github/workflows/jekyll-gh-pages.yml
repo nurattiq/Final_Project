@@ -58,46 +58,46 @@ jobs:
   
   # Configuring my theme 
   
+    ---
+  # new `_layouts/default.html` for backwards-compatibility when multiple
+  # layouts have been customized.
+
+  layout: base
   ---
-# new `_layouts/default.html` for backwards-compatibility when multiple
-# layouts have been customized.
 
-layout: base
----
+  {{ content }}
+  <!DOCTYPE html>
+  <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-{{ content }}
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+    {%- include head.html -%}
 
-  {%- include head.html -%}
+    <body>
 
-  <body>
+      {%- include header.html -%}
 
-    {%- include header.html -%}
+      <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+      {%- include footer.html -%}
 
-    {%- include footer.html -%}
+    </body>
 
-  </body>
+  </html>
 
-</html>
+  @import
+    "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+    "minima/initialize";
+  minima: 
+    author:
+    name: Nur Attiq
+    email: "nurattiq@gmail.com"
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
-minima: 
-  author:
-  name: Nur Attiq
-  email: "nurattiq@gmail.com"
-  
-  header_pages:
-  - about.md
-  - portfolio.md
-  
-  social_links:
-    - { platform: linkedin,  user_url: "https://www.linkedin.com/in/nurattiq/ }
+    header_pages:
+    - about.md
+    - portfolio.md
+
+    social_links:
+      - { platform: linkedin,  user_url: "https://www.linkedin.com/in/nurattiq/ }
