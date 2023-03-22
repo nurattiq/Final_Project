@@ -70,3 +70,7 @@ layout: base
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+  
+  author:
+  name: Nur Attiq
+  email: "nurattiq@gmail.com"
