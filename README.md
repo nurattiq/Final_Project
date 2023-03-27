@@ -1,4 +1,4 @@
-# Welcome!!
+# Welcome!
 My name is Nur. I'm a Data Analyst who loves insights. This is the GitHub repository
 for some of the projects I for my Masters in Business Analytics. This repository
 shows only the beginning of my journey into programming. I can't wait to do more 
