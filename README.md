@@ -5,7 +5,7 @@ shows only the beginning of my journey into programming. I can't wait to do more
 and share it here with you guys. 
 
 
-## Project 1: Final Project 
+## [Project 1: Final Project](https://github.com/nurattiq/Profile-Projects/blob/main/finale.ipynb)
 Steffen extract, NLP, Time-Series Analysis. Microsoft's quarterly earnings. 
 
 ## Project 2: 
